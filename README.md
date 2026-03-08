@@ -1,4 +1,4 @@
-# <img src="https://res.cloudinary.com/dhcllqvkz/image/upload/v1770637909/Logo_tabBar_kxomwa.png" alt="TradeFlow Logo" width="65"> TradeFlow - Full Stack Trading Platform
+# <img src="https://res.cloudinary.com/dhcllqvkz/image/upload/v1770637909/Logo_tabBar_kxomwa.png" alt="TradeFlow Logo" width="45"> TradeFlow - Full Stack Trading Platform
 
 **TradeFlow** is a modern **full-stack trading platform** that simulates a **real-world stock trading experience**. Users can **execute trades**, **manage portfolios**, and track **orders, holdings, positions, bids, and funds**, while enjoying a **responsive user interface**, **secure backend architecture**, and **efficient trade execution**.
 
@@ -39,7 +39,7 @@ The platform incorporates **secure authentication and authorization** with a **m
 
 # Live Demo
 
-#### 🌐 Access TradeFlow live here: [Visit TradeFlow]()
+#### 🌐 Access TradeFlow live here: [Visit TradeFlow](https://tradeflow-pro.vercel.app)
 
 ---
 
@@ -467,6 +467,8 @@ TradeFlow/
 | GET    | `/api/funds` | Get all funds  |
 | POST   | `/api/funds` | Add a new fund |
 
+<br>
+
 > All API routes were tested using **Thunder Client**.
 
 ---
@@ -523,10 +525,10 @@ Use the demo account below to explore the dashboard, orders, holdings, bids, and
 
 Create a `.env` file inside the **backend** folder and add:
 
-    ```bash
+   ```bash
     MONGO_URI=your-mongodb-connection-string
     JWT_SECRET=your-jwt-secret
-    ```
+  ```
 
 > `JWT_SECRET` can be any random string used to sign authentication tokens.
 
@@ -534,17 +536,17 @@ Create a `.env` file inside the **backend** folder and add:
 
 Backend:
 
-    ```bash
+   ```bash
     cd backend
     npm run dev
-    ```
+  ```
 
 Frontend:
 
-    ```bash
+  ```bash
     cd frontend
     npm run dev
-    ```
+  ```
 
 > Both servers run in development mode. The frontend port may vary depending on your system.
 
@@ -569,10 +571,10 @@ Currently, the **Signup Page** functionality is tested to ensure:
 
 ### Run Tests
 
-    ```bash
+  ```bash
     cd frontend
     npm run test
-    ```
+  ```
 
 ### Test Results
 
@@ -581,6 +583,7 @@ The tests for the **Signup Page** ran successfully, confirming the expected beha
 <p align="center">
   <img src="https://res.cloudinary.com/dhcllqvkz/image/upload/v1772901092/Testing_result_dljyqd.png" alt="Signup Page Test Results" width="750">
 </p>
+<br>
 
 > All tests passed successfully, ensuring that the **Signup Page** is reliable and functions as intended.
 
