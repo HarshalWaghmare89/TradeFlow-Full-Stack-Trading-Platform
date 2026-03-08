@@ -40,13 +40,15 @@ function HeroSection() {
 
   const navigate = useNavigate();
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleSignUp = async (e) => {
     e.preventDefault();
     setSignupErrors({});
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/auth/signup",
+        `${API_URL}/api/auth/signup`,
         signupData,
         { headers: { "Content-Type": "application/json" } },
       );
@@ -75,7 +77,7 @@ function HeroSection() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/auth/login",
+        `${API_URL}/api/auth/login`,
         loginData,
         { headers: { "Content-Type": "application/json" } },
       );
