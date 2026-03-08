@@ -1,4 +1,4 @@
-import Funds from "./components/funds";
+import Funds from "./components/Funds";
 
 function FundsPage() {
   return (
