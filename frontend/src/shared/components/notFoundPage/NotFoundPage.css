@@ -1,0 +1,17 @@
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .notFound-heading {
+    font-size: 1.5rem !important;
+  }
+
+  .notFound-msg {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .notFound-msg {
+    font-size: 0.85rem !important;
+  }
+}

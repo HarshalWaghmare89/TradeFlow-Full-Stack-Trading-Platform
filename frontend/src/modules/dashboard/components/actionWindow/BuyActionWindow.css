@@ -1,0 +1,221 @@
+/* Overlay background */
+.trade-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1500;
+  padding: 10px;
+}
+
+/* Card Container */
+.trade-container {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: tradeFadeIn 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+/* BUY theme */
+.trade-buy-theme .trade-header {
+  background: linear-gradient(135deg, #4184f3, #2d6cdf);
+}
+
+/* SELL theme */
+.trade-sell-theme .trade-header {
+  background: linear-gradient(135deg, #e53935, #c62828);
+}
+
+/* Header */
+.trade-header {
+  padding: 16px 20px;
+  color: #fff;
+}
+
+.trade-header h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.trade-header span {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Body */
+.trade-regular-order {
+  padding: 24px;
+}
+
+/* Inputs layout */
+.trade-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Fieldset styling */
+.trade-inputs fieldset {
+  flex: 1 1 45%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.trade-inputs legend {
+  font-size: 0.75rem;
+  padding: 0 6px;
+  color: #888;
+}
+
+.trade-inputs input,
+.trade-inputs select {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  padding: 6px 0;
+  background: transparent;
+}
+
+.trade-inputs select option {
+  background-color: var(--bg-primary);
+}
+
+.trade-inputs input:focus,
+.trade-inputs select:focus {
+  outline: none;
+}
+
+[data-theme="light"] .trade-inputs fieldset:focus-within {
+  border: 1px solid var(--text-primary) !important;
+}
+
+.trade-inputs input,
+.trade-inputs select {
+  color: var(--text-primary);
+}
+
+/* Footer buttons */
+.trade-buttons {
+  padding: 16px 20px;
+  background: var(--support-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trade-buttons span {
+  font-size: 0.8rem;
+  color: var(--nav-tabs);
+}
+
+/* Buttons */
+.trade-btn {
+  padding: 8px 18px;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.752rem !important;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.trade-btn-blue {
+  background: #4184f3;
+  color: white;
+}
+
+.trade-btn-blue:hover {
+  background: #2d6cdf;
+}
+
+.trade-btn-red {
+  background: #e53935;
+  color: white;
+}
+
+.trade-btn-red:hover {
+  background: #c62828;
+}
+
+.trade-btn-grey {
+  background: #e0e0e0;
+  color: #555;
+  margin-left: 10px;
+}
+
+.trade-btn-grey:hover {
+  background: #bdbdbd;
+  color: white;
+}
+
+/* Smooth appearance */
+@keyframes tradeFadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+@media (max-width: 768px) {
+  .trade-container {
+    width: 95%;
+  }
+
+  .trade-inputs legend {
+    font-size: 0.725rem !important;
+  }
+
+  .trade-buttons span {
+    font-size: 0.725rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .trade-header h3,
+  .trade-inputs input,
+  .trade-inputs select {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .trade-header h3,
+  .trade-inputs input,
+  .trade-inputs select {
+    font-size: 0.85rem;
+  }
+
+  .trade-buttons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trade-inputs fieldset {
+    padding: 8px;
+  }
+  .trade-inputs legend {
+    margin-bottom: 0;
+  }
+  .trade-container {
+    width: 85%;
+  }
+
+  .trade-inputs fieldset {
+    flex: 0 0 100%;
+  }
+}

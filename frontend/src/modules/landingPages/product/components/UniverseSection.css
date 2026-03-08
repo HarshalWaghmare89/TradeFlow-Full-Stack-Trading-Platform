@@ -1,0 +1,74 @@
+.UniverseSection {
+  padding-bottom: 80px;
+}
+.landing-subheading {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.product-section {
+  padding-top: 80px;
+}
+
+.parent-product {
+  margin-top: 40px;
+}
+
+.parent-product a {
+  margin-top: 20px;
+}
+
+.parent-product a img {
+  height: 55px;
+}
+
+.parent-product a img.sensibull-logo {
+  height: 40px;
+}
+.parent-product span {
+  line-height: 18px;
+  margin-top: 10px;
+  color: var(--footer-text);
+  font-size: 0.75rem;
+}
+
+.footer-button {
+  padding-top: 20px;
+}
+
+.button {
+  background-color: var(--btn-bg);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border-radius: 3px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black !important;
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .UniverseSection .container .row .landing-subheading,
+  .UniverseSection .container .footer-button .button {
+    font-size: 1rem;
+  }
+
+  .UniverseSection .container .row .product-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .UniverseSection .container .row .product-section p {
+    font-size: 0.85rem !important;
+  }
+}

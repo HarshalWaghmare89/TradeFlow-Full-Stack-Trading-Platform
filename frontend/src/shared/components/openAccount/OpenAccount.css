@@ -1,0 +1,36 @@
+.openAccount {
+  padding: 40px 20px 80px;
+}
+
+.openAccount h2 {
+  margin: 0;
+}
+
+.button {
+  background-color: var(--btn-bg);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border-radius: 3px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black !important;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .openAccount .container .row h2 {
+    font-size: 1.25rem;
+  }
+
+  .openAccount .container .row p,
+  .openAccount .container .row .button {
+    font-size: 1rem;
+  }
+}

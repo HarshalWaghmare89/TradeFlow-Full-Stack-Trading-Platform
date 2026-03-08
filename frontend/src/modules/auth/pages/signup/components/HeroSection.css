@@ -1,0 +1,132 @@
+.acop-head {
+  padding: 0px;
+}
+
+.acop-head .acop-subheading {
+  padding: 100px 0px 50px;
+}
+
+.acop-head .acop-subheading p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.acop-head .account-open-sections {
+  padding: 20px 40px 0px;
+}
+.show-on-mobile {
+  display: none;
+}
+
+.open-account-submit-container .button {
+  padding: 12px 16px;
+  font-size: 0.98rem;
+  margin-bottom: 20px;
+}
+
+.account-open-sections .signup-form h2 {
+  margin-bottom: 5px;
+}
+
+.account-open-sections .signup-form .color-gray {
+  color: var(--footer-text);
+}
+
+.signup-form .signup-help,
+.forget-pass-link {
+  font-size: 14px;
+}
+
+form .not-around input {
+  padding: 10px 16px;
+  height: 40px;
+  background-color: var(--bg-primary);
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+form .not-around input::placeholder {
+  color: #999;
+}
+
+form .not-around input:focus {
+  border-color: var(--text-primary);
+  box-shadow: none;
+}
+
+.text-12 {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.font-sm {
+  font-size: 0.75rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #888;
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .acop-head .acop-subheading {
+    display: none !important;
+  }
+
+  .open-account-submit-container .button {
+    height: 100%;
+    max-height: 280px;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .signup-form .signup-head {
+    font-size: 1.25rem;
+  }
+
+  .signup-form .signup-help,
+  .forget-pass-link {
+    font-size: 0.85rem;
+  }
+
+  #open_account_formmt input {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .account-open-sections .acop-landing .account-coin-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .account-open-sections .acop-landing .account-coin-img {
+    padding-bottom: 30px;
+  }
+
+  .signup-form .show-on-mobile {
+    display: block;
+  }
+
+  .signup-form .signup-head,
+  .signup-form .mobile-heading {
+    font-size: 1.25rem;
+  }
+
+  .open-account-submit-container button {
+    width: 100%;
+    height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .not-around .mobile-full {
+    margin-bottom: 1rem;
+  }
+}

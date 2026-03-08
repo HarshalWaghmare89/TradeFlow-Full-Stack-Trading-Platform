@@ -1,0 +1,189 @@
+/* Overlay background */
+.funds-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 10px;
+}
+
+/* Modal container */
+.funds-modal {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg-primary);
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: fundsFadeIn 0.25s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.funds-header {
+  padding: 16px 20px;
+  color: #fff;
+}
+
+.funds-header.add {
+  background: linear-gradient(135deg, #4caf50, #43a047);
+}
+.funds-header.withdraw {
+  background: linear-gradient(135deg, #4184f3, #2d6cdf);
+}
+
+.funds-header h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.funds-header span {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* Body */
+.funds-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Fieldset styling */
+.funds-body fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+}
+
+.funds-body legend {
+  font-size: 0.75rem;
+  padding: 0 6px;
+  color: #888;
+}
+
+.funds-body input,
+.funds-body select {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  padding: 6px 0;
+  background: transparent;
+}
+
+.funds-body input {
+  color: var(--text-primary);
+}
+
+.funds-body input:focus,
+.funds-body select:focus {
+  outline: none;
+}
+
+[data-theme="light"] .funds-body fieldset:focus-within {
+  border: 1px solid var(--text-primary) !important;
+}
+/* Footer buttons */
+.funds-footer {
+  padding: 16px 20px;
+  background: var(--support-bg);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.funds-footer span {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+}
+.funds-btn {
+  padding: 8px 18px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+  font-size: 0.752rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Add funds button */
+.funds-btn-add {
+  background: #4caf50;
+  color: white;
+}
+
+.funds-btn-add:hover {
+  background: #4caf50;
+}
+
+/* Withdraw funds button */
+.funds-btn-withdraw {
+  background: #4184f3;
+  color: white;
+}
+
+.funds-btn-withdraw:hover {
+  background: #2d6cdf;
+}
+
+/* Cancel button */
+.funds-btn-cancel {
+  background: #e0e0e0;
+  color: #555;
+}
+
+.funds-btn-cancel:hover {
+  background: #bdbdbd;
+  color: white;
+}
+
+/* Smooth fade in */
+@keyframes fundsFadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+@media (max-width: 768px) {
+  .funds-modal {
+    width: 95%;
+  }
+  .funds-body legend {
+    font-size: 0.725rem !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .funds-header h3,
+  .funds-body input {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .funds-modal {
+    width: 85%;
+  }
+
+  .funds-header h3,
+  .funds-body input {
+    font-size: 0.85rem;
+  }
+
+  .funds-footer {
+    gap: 15px;
+  }
+}

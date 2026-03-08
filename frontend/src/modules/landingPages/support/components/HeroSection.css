@@ -1,0 +1,93 @@
+.support-section {
+  background-color: var(--support-bg);
+  padding: 20px 15px 40px;
+}
+
+.support-header p {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+.support-header {
+  padding-bottom: 22px;
+}
+.support-header .button {
+  background-color: var(--btn-bg);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 0px;
+  font-size: 1rem;
+  line-height: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black !important;
+}
+
+.support-header-input input {
+  padding: 16px 0px 16px 4px;
+  border: none;
+  caret-color: var(--text-primary);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.support-header-input {
+  padding: 0px 24px;
+  background-color: var(--bg-primary);
+  border: 0.75px solid #e0e7ef;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  gap: 0.25rem;
+}
+
+.support-header-input span {
+  color: #666;
+}
+.w-full {
+  width: 100%;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+input::placeholder {
+  color: #999;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .support-section .support-header p {
+    font-size: 1.25rem;
+  }
+
+  .support-section .support-header button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .support-header-input .support-header-icon {
+    display: none;
+  }
+
+  .support-header-input {
+    padding: 0 20px;
+  }
+
+  .support-section .support-header button {
+    padding: 8px 10px;
+  }
+
+  .support-header-input input {
+    font-size: 0.8rem !important;
+  }
+}

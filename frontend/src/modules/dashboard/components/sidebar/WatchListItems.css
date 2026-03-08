@@ -1,0 +1,104 @@
+.list .watchlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.list .watchlist-item p {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.itemInfo .percent {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgb(146, 146, 146);
+}
+
+.itemInfo .price {
+  min-width: 60px;
+  text-align: right;
+}
+.up {
+  color: #4caf50;
+}
+
+.down {
+  color: #df514c;
+}
+
+.itemInfo .item-icon {
+  font-size: 1.1rem;
+}
+
+.action {
+  position: absolute;
+  right: 1px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.action .item-icon {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.buy-btn,
+.sell-btn,
+.market-btn,
+.chart-btn,
+.del-btn,
+.more-btn {
+  font-size: 0.655rem;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-btn,
+.sell-btn {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.market-btn,
+.chart-btn,
+.del-btn,
+.more-btn {
+  background-color: #fff;
+  border: 0.5px solid #9b9b9b;
+}
+
+.market-btn:hover,
+.chart-btn:hover,
+.del-btn:hover,
+.more-btn:hover {
+  background-color: #9b9b9b;
+  color: #fff;
+}
+
+.buy-btn {
+  background-color: #4184f3;
+  color: #fff;
+}
+.buy-btn:hover {
+  background-color: #5c97f5;
+}
+
+.sell-btn {
+  background-color: #ff5722;
+  color: #fff;
+}
+.sell-btn:hover {
+  background-color: #ff784e;
+}

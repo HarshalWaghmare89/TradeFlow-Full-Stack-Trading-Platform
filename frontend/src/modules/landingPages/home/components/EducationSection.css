@@ -1,0 +1,31 @@
+/* =========================== Responsiveness / Media Queries =========================== */
+@media only screen and (max-width: 800px) {
+  .education .container .row .education-msg h2 {
+    font-size: 1.25rem;
+  }
+
+  .education .education-msg p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .education {
+    padding-top: 0 !important;
+  }
+  .education .container .row .education-msg {
+    padding-top: 10px;
+    margin-top: 40px;
+  }
+  .education .container .row .education-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .education-link,
+  .education .education-msg p {
+    font-size: 0.85rem !important;
+  }
+}

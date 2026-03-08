@@ -1,0 +1,96 @@
+.faq-container {
+  padding: 0px 60px 80px;
+}
+
+.signup-faq-section .faq-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 40px 0;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.signup-faq-section .faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-faq-section .faq-item .faq-question {
+  outline: none;
+  caret-color: transparent;
+  user-select: none;
+}
+
+.signup-faq-section .faq-question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  border-top: 1px solid #eaeaea;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.signup-faq-section .faq-question::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: block;
+  height: 4px;
+  width: 8.3333%;
+  background-color: var(--btn-bg);
+  transition: width 0.2s;
+}
+.signup-faq-section .faq-question:hover::before,
+.signup-faq-section .faq-question:focus::before {
+  width: 10%;
+}
+
+.signup-faq-section .question-text {
+  font-weight: 500;
+  font-size: 14px !important;
+}
+
+.signup-faq-section .faq-answer p,
+.signup-faq-section .faq-answer ul li {
+  padding: 8px 0;
+  color: var(--text-muted);
+  font-size: 14px !important;
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .signup-faq-section .faq-container h3 {
+    font-size: 1.1rem !important;
+    padding-bottom: 40px;
+  }
+
+  .signup-faq-section .question-text,
+  .signup-faq-section .faq-answer p,
+  .signup-faq-section .faq-answer ul li {
+    font-size: 0.95rem;
+  }
+
+  .faq-container {
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .signup-faq-section .question-text,
+  .signup-faq-section .faq-answer p,
+  .signup-faq-section .faq-answer ul li {
+    font-size: 0.85rem !important;
+  }
+}

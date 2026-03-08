@@ -1,0 +1,58 @@
+.ecosystem {
+  margin-top: 30px;
+}
+
+.ecosystem .container .row .ecosystem-msg h2 {
+  margin-bottom: 40px !important;
+}
+
+.ecosystem .container .row .ecosystem-msg h3 {
+  margin: 0;
+}
+
+.ecosystem .container .row .ecosystem-msg p {
+  margin-top: 5px;
+  margin-bottom: 32px;
+}
+
+.ecosystem .container .row .ecosystem-img .text-center img {
+  max-width: 100%;
+  width: auto;
+}
+
+.ecosystem-img p {
+  margin-top: 16px;
+}
+
+.ecosystem-img p .demo-link {
+  margin-left: 24px;
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+@media only screen and (max-width: 800px) {
+  .ecosystem .container .row .ecosystem-msg h2 {
+    font-size: 1.25rem;
+  }
+
+  .ecosystem .container .row .ecosystem-msg h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .ecosystem .ecosystem-msg p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .ecosystem .container .row .ecosystem-img .text-center img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .ecosystem-links,
+  .ecosystem .ecosystem-msg p {
+    font-size: 0.85rem !important;
+  }
+}

@@ -1,0 +1,47 @@
+.About-section {
+  padding: 0px;
+}
+.about-header {
+  padding: 100px 20px;
+}
+
+.about-header h2 {
+  margin-bottom: 0px;
+}
+
+.about-history {
+  padding: 80px 20px 0px;
+  justify-content: space-between;
+}
+
+.about-history p {
+  margin-top: 1rem;
+}
+
+.about-history .col-6 {
+  flex-basis: 48%;
+  width: 48%;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+@media only screen and (min-width: 1100px) {
+  .about-history {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .About-section .container .about-header h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .About-section .container .about-history p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .About-section .container .about-history p {
+    font-size: 0.85rem !important;
+  }
+}

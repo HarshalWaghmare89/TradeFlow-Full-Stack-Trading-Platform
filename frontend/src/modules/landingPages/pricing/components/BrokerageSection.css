@@ -1,0 +1,149 @@
+.charges-sections {
+  padding-bottom: 80px;
+}
+.brokerage-table {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  overflow-y: hidden;
+}
+.tinytabs .tabs {
+  border-bottom: 1px solid var(--tabs-border-color);
+  margin-bottom: 30px;
+}
+
+.tinytabs .tabs .tab {
+  font-size: 1.5rem;
+  min-width: 165px;
+  padding: 8px 19px;
+  color: var(--btn-bg);
+  border-radius: 3px 3px 0 0;
+  border: none;
+}
+
+.tinytabs .tab.sel {
+  color: var(--nav-tab);
+  border: none;
+  border-bottom: 2px solid var(--btn-bg) !important;
+}
+
+.tinytabs .tab:hover {
+  color: var(--nav-tab);
+}
+
+.table {
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid var(--table-border);
+  table-layout: auto;
+  background-color: var(--table-bg);
+}
+
+table td {
+  border: none !important;
+  font-size: 0.875rem !important;
+  color: var(--table-text) !important;
+}
+
+.charges-heads {
+  font-size: 0.9rem !important;
+  color: var(--table-first-col-text) !important;
+}
+
+[data-theme="dark"] .table > :not(caption) > * > * {
+  background-color: var(--bs-table-accent-bg);
+}
+
+table thead tr th {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid var(--table-border);
+  color: var(--table-text) !important;
+  white-space: nowrap;
+}
+
+.tinytabs .table th,
+.tinytabs .table td {
+  vertical-align: middle;
+  line-height: 1.6;
+}
+
+.tinytabs .table ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.tinytabs .table > :not(caption) > * > * {
+  padding: 12px 15px;
+}
+
+.table > tbody > tr:nth-child(even) > td {
+  background-color: var(--table-row-even-bg);
+}
+
+.charges-sections .brokerage-link {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0;
+  color: var(--text-primary);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.charges-sections .brokerage-link a {
+  font-weight: 400;
+}
+
+.tab-fo {
+  display: none;
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+@media only screen and (max-width: 800px) {
+  .tab-fo {
+    display: inline-block !important;
+  }
+
+  .table td:nth-child(4),
+  .table th:nth-child(4),
+  .table td:nth-child(5),
+  .table th:nth-child(5) {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .charges-sections .tabs button {
+    min-width: 50px;
+    font-size: 1rem !important;
+    padding: 6px !important;
+  }
+
+  .tinytabs .tabs {
+    margin-bottom: 0 !important;
+  }
+
+  .charges-sections .container .brokerage-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .charges-sections .tabs button {
+    font-size: 0.85rem !important;
+    min-width: 20% !important;
+  }
+
+  .brokerage-table table td,
+  .brokerage-table table thead tr th,
+  .charges-heads {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .charges-sections .container .brokerage-link {
+    font-size: 0.85rem !important;
+  }
+}

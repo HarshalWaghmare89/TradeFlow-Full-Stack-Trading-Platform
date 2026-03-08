@@ -1,0 +1,94 @@
+.account-open-sections {
+  padding: 0px 40px;
+}
+
+.investment-options-section {
+  padding: 100px 0px;
+  width: 900px;
+  margin: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.investment-options-section h2 {
+  margin-bottom: 50px;
+}
+
+.account-open-sections .investment-options-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 24px;
+  padding: 24px 0px;
+}
+
+.account-open-sections .investment-options {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.investment-options-section h3 {
+  margin: 0px;
+}
+
+.investment-options .acop-steps-text {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.explore-investments {
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+.explore-investments .button {
+  margin-top: 30px;
+}
+
+.account-open-sections .investment-options-group .investment-options img {
+  width: 60px;
+  height: auto;
+  flex-shrink: 0;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (min-width: 800px) {
+  .account-open-sections .investment-options-group .investment-options img {
+    width: 112px;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .account-open-sections .investment-options-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .account-open-sections .investment-options-group {
+    gap: 64px 112px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .account-open-sections .investment-options-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .investment-options-group .investment-options h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .investment-options-group .investment-options p {
+    font-size: 0.95rem;
+  }
+
+  .explore-investments .button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .investment-options-group .investment-options p {
+    font-size: 0.85rem !important;
+  }
+}

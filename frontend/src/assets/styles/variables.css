@@ -1,0 +1,91 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+
+  /* ========== TYPOGRAPHY SCALE ========== */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px*/
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px*/
+
+  /* ========== Colors ========== */
+  --tabs-border-color: #e1e1e1;
+  --bg-primary: #ffffff;
+  --text-primary: #111111;
+  --border-color: #e6e6e6;
+  --nav-bg: #ffffff;
+  --nav-tabs: #444;
+  --btn-hover-bg: #111111;
+  --btn-bg: #387ed1;
+  --btn-text: #fff;
+  --text-muted: #6c757d;
+  --footer-head: #424242;
+  --footer-text: #9b9b9b;
+  --text-hover: #0d6efd;
+  --border-color-secondary: #eee;
+  --support-bg: #f6f6f6;
+  --support-icon-bg: color-mix(in oklab, #d0ebff 30%, transparent);
+  --account-open-steps: #fafafb;
+
+  /* Table*/
+  --color-bg-body: #ffffff;
+  --color-bg-surface: #ffffff;
+  --color-text-primary: #424242;
+  --color-text-muted: #444444;
+  --color-border-default: #dddddd;
+
+  --table-bg: var(--color-bg-surface);
+  --table-text: var(--color-text-primary);
+  --table-border: var(--color-border-default);
+  --table-row-even-bg: #f9f9f9;
+  --table-row-hover-bg: #f1f1f1;
+
+  --table-first-col-text: var(--color-text-muted);
+  --bs-table-accent-bg: transparent;
+
+  /* ========== Dashboard ========== */
+  --sidebar-width: 320px;
+  --dropdown-hover: #f5f7fb;
+  --dropdown-bg: #fff;
+  --dashboard-table-hover: rgb(238, 238, 238, 0.4);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-primary: #111111;
+  --text-primary: #e5e5e5;
+  --border-color: #1e293b;
+  --nav-bg: #111111;
+  --nav-tabs: #cccccc;
+  --text-muted: #b0b0b0;
+  --btn-hover-bg: #2c5aa0;
+  --footer-head: #b0b0b0;
+  --footer-text: #b0b0b0;
+  --support-bg: #1e1e1e;
+  --support-icon-bg: color-mix(in oklab, #1a3a50 30%, transparent);
+  --account-open-steps: #1c1c1e;
+
+  /* Table */
+  --color-bg-body: #121212;
+  --color-bg-surface: #1e1e1e;
+  --color-text-primary: #e0e0e0;
+  --color-text-muted: #bdbdbd;
+  --color-border-default: #2c2c2c;
+
+  --table-bg: var(--color-bg-surface);
+  --table-text: var(--color-text-primary);
+  --table-border: var(--color-border-default);
+  --table-row-even-bg: #242424;
+  --table-row-hover-bg: #2f2f2f;
+
+  --table-first-col-text: var(--color-text-muted);
+
+  /* ========== Dashboard ========== */
+  --dropdown-hover: #2a2a2a;
+  --dropdown-bg: #1e1e1e;
+  --dashboard-table-hover: #2a2a2a;
+}

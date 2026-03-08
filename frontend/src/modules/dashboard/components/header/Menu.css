@@ -1,0 +1,139 @@
+.menu-container {
+  flex-basis: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+[data-theme="dark"] .menu-container {
+  border-bottom: 1px solid #e6e6e6 !important;
+}
+
+.menu-container .left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.left-section .sidebar-toggle {
+  background: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  display: block;
+  color: var(--nav-tabs);
+  transform: rotate(90deg);
+}
+
+.menu-container img {
+  width: auto;
+  height: 14px;
+}
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.75rem;
+  color: var(--nav-tabs);
+  font-weight: 400;
+}
+
+.menus ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0;
+}
+
+.menus a {
+  color: var(--nav-tabs);
+  font-weight: 400;
+}
+
+.menus .menu-item {
+  display: inline-block;
+  padding: 16px 10px;
+}
+
+.menus .normalTab {
+  font-weight: 400;
+  color: var(var(--nav-tabs));
+}
+
+.menus .activeTab {
+  color: #ff5722;
+  font-weight: 700;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bulletin-menu {
+  display: inline-block;
+  padding: 16px 10px;
+}
+
+.profile .avatar {
+  width: 25px;
+  height: 25px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(221, 139, 221);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(252, 229, 252);
+  margin-right: 8px;
+}
+
+.menus .menu-item:hover,
+.menus ul .normalTab:hover,
+.bulletin-menu:hover {
+  color: #ff5722;
+}
+
+.menus .menu-item,
+.profile {
+  cursor: pointer;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+/* Hide toggle on desktop */
+@media (min-width: 1024px) {
+  .left-section .sidebar-toggle {
+    display: none;
+  }
+
+  .active-tab-header {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menus .all-header-tabs {
+    display: none;
+  }
+
+  .active-tab-header p {
+    display: block;
+    font-weight: 500;
+    color: #ff5722;
+    font-size: 0.75rem;
+  }
+
+  .active-tab-header p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile .avatar {
+    margin: 0;
+  }
+}

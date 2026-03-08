@@ -1,0 +1,56 @@
+.pricing .container .row .col-5 p {
+  margin-top: 16px;
+}
+
+.pricing-box {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.pricing-box p {
+  font-size: 9px;
+  margin: 0;
+  line-height: 16px;
+}
+
+.pricing-box img {
+  width: 100px;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .pricing .container .row .pricing-msg h2 {
+    font-size: 1.25rem;
+  }
+
+  .pricing .pricing p {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .pricing .pricing-box img {
+    width: 95px !important;
+  }
+}
+@media only screen and (max-width: 995px) {
+  .pricing .pricing-box img {
+    width: 85px !important;
+  }
+}
+@media (max-width: 767.99px) {
+  .pricing {
+    padding-bottom: 0px;
+  }
+  .pricing .container .pricing-link {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing .container .pricing-link,
+  .pricing .pricing-msg p {
+    font-size: 0.85rem !important;
+  }
+}

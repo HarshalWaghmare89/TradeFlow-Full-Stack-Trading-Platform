@@ -1,0 +1,12 @@
+.auctions {
+  margin-bottom: 80px;
+}
+
+.auctions .bids .th-cell:nth-child(2),
+.table-body .td-cell:nth-child(2) {
+  text-align: right !important;
+}
+
+.auctions .stocks-table tbody .td-cell:nth-child(6) {
+  color: #9b9b9b !important;
+}

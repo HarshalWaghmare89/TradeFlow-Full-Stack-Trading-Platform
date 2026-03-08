@@ -1,0 +1,44 @@
+.awards {
+  margin-top: 30px;
+  padding-bottom: 120px;
+}
+
+.awards .container .row .awards-msg h2 {
+  margin-bottom: 25px !important;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+@media only screen and (max-width: 800px) {
+  .awards .container .row .awards-msg h2 {
+    font-size: 1.25rem;
+  }
+
+  .awards .container .row .awards-msg p,
+  .awards .container .row .awards-msg .awards-ist li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .awards .container .row .awards-msg {
+    margin-top: 40px;
+    padding-top: 10px;
+  }
+  .awards {
+    padding: 90px 0 !important;
+  }
+  .awards-left .awards-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .awards {
+    padding: 80px 20px 120px !important;
+  }
+
+  .awards .container .row .awards-msg p,
+  .awards .container .row .awards-msg .awards-ist li {
+    font-size: 0.85rem;
+  }
+}

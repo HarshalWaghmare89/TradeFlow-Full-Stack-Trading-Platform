@@ -1,0 +1,143 @@
+.ticket-section {
+  padding: 28px 24px 0px;
+}
+
+.sub-links {
+  padding: 20px 0px 40px;
+}
+.accordion-item summary {
+  outline: none;
+  caret-color: transparent;
+  user-select: none;
+}
+
+.icon {
+  background-color: var(--support-icon-bg);
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+}
+
+.drop-down {
+  transition: transform 0.3s ease;
+}
+
+.drop-down:hover {
+  transform: scale(1.02);
+}
+
+.drop-down h2 {
+  font-size: inherit;
+  padding: 16px 12px;
+}
+
+.drop-down span .rotate {
+  transform: rotate(-90deg);
+}
+
+.rotate-icon {
+  padding: 0.5rem;
+  color: #397dd0;
+}
+
+.rotate-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+details[open] .rotate-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content .support-list {
+  padding: 16px 0px 16px 64px;
+}
+
+.accordion-content li {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.accordion-content li a {
+  font-weight: 400;
+  display: block;
+}
+
+.accordion-content ul li::marker {
+  color: #397dd0;
+}
+
+.accordion-content ul li:hover::marker {
+  color: var(--text-primary);
+}
+
+.accordion-content ul li a:hover {
+  color: var(--text-primary);
+}
+
+.quick-links {
+  padding-left: calc(0.25rem * 10);
+  padding-right: 0px;
+}
+
+.featured-container {
+  padding: 20px 0px 40px;
+}
+.post-message {
+  background-color: #ff91001a;
+  border-left: 8px solid #ff9100;
+  padding: auto;
+}
+
+.post-message p {
+  margin: 0px;
+}
+.links-sections {
+  padding-top: 1.5rem;
+  padding-bottom: 40px;
+}
+
+.links-sections .link-header {
+  padding: 12px 20px;
+  background-color: var(--support-bg);
+  font-weight: 500;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.links-sections a {
+  padding: 12px 20px;
+  font-weight: 400;
+}
+
+.links-sections a:hover {
+  color: var(--text-primary);
+}
+
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .accordion-item .drop-down h2,
+  .accordion-content .support-list li a,
+  .color-msg,
+  .links-sections a {
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .quick-links {
+    padding: 0 !important;
+  }
+
+  .featured-container,
+  .links-sections {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-content .support-list {
+    padding-left: 50px !important;
+  }
+}

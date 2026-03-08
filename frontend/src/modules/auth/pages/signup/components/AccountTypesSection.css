@@ -1,0 +1,91 @@
+.account-types-sections {
+  padding: 0px 40px;
+}
+
+.account-types-sections .container h2 {
+  margin-bottom: 50px;
+}
+
+.account-types-sections .container .acop-type-card {
+  display: inline-block;
+  border: 1px solid var(--tabs-border-color);
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.account-types-sections .container .acop-type-card p {
+  margin: 0px;
+  font-weight: 400;
+}
+
+.account-types-sections .container .acop-type-card img {
+  position: absolute;
+  left: -18px;
+  background-color: #eff6ff;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.account-types-sections .container .acop-type-card h3 {
+  color: var(--nav-tabs);
+  font-size: 18px;
+}
+
+.custom-col {
+  flex: 30.6667%;
+  max-width: 30.6667%;
+}
+
+.account-types-sections .container .acop-type-card:hover {
+  border-color: var(--btn-bg);
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media only screen and (max-width: 800px) {
+  .account-types-sections .container h2 {
+    font-size: 1.25rem;
+    text-align: left !important;
+  }
+
+  .account-types-sections .acop-type-card h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 10px;
+  }
+
+  .account-types-sections .acop-type-card p {
+    font-size: 0.95rem;
+  }
+
+  .acop-type-card {
+    display: block !important;
+    box-sizing: border-box;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 25px !important;
+  }
+
+  .custom-col {
+    min-width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .account-types-sections .acop-type-card p {
+    font-size: 0.85rem !important;
+  }
+
+  .account-types-sections .container h2 {
+    font-size: 1.1rem !important;
+  }
+  .account-types-sections .acop-type-card h3 {
+    font-size: 1rem !important;
+  }
+
+  .account-types-sections {
+    padding: 0 20px !important;
+  }
+}

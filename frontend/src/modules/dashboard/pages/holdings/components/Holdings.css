@@ -1,0 +1,252 @@
+.holdings-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.holdings-left .title {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--nav-tabs);
+  font-weight: 400;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-tools {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  border: 1px solid #eee;
+}
+
+.left-tools .left-tool-icon {
+  font-size: 0.625rem;
+  opacity: 0.4;
+}
+
+.right-tools .right-tool-icon {
+  font-size: 0.625rem;
+  margin-right: 3px;
+}
+
+.right-tools .rotate-icon {
+  transform: rotate(90deg);
+  padding: 0;
+}
+
+.left-tools input {
+  width: 75px;
+  border: 0;
+  padding: 5px 10px;
+  transition: width 0.2s ease-in-out;
+  font-size: 0.625rem;
+  background-color: var(--bg-primary) !important;
+  color: var(--nav-tabs);
+}
+
+.left-tools input:focus {
+  width: 180px;
+}
+
+.right-tools {
+  display: flex;
+  gap: 10px;
+  font-size: 0.625rem;
+  padding-left: 8px;
+}
+
+.link-btn,
+.download-btn {
+  background: none;
+  border: none;
+  color: #387ed1;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding: 20px 10px;
+}
+
+.stats-header .label {
+  font-size: 0.75rem;
+  color: var(--footer-text);
+  margin-bottom: 5px;
+}
+
+.stats-header .value {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.stats .percentage {
+  font-size: 0.6rem;
+}
+
+.holdings .stocks-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #f1f1f1;
+}
+
+.holdings .stocks-table .tr-row .th-cell {
+  padding: 12px;
+  font-size: 0.75rem;
+  color: var(--footer-text) !important;
+  font-weight: 400;
+  text-align: right;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.holdings .stocks-table .tr-row .td-cell {
+  padding: 10px 12px;
+  text-align: right;
+}
+
+.holdings .stocks-table .tr-row {
+  border-bottom: 1px solid #f1f1f1 !important;
+}
+
+.holdings .stocks-table .tr-row .net-chg {
+  font-size: 0.75rem !important;
+}
+
+.holdings .stocks-table .tr-row .day-chg {
+  font-size: 0.625rem !important;
+}
+
+.holdings .stocks-table .th-cell:first-child,
+.holdings .stocks-table tbody .td-cell:first-child {
+  text-align: left !important;
+  border-right: 1px solid #f1f1f1 !important;
+}
+
+.th-cell:nth-child(4),
+tbody .td-cell:nth-child(4) {
+  border-right: 1px solid #f1f1f1 !important;
+}
+
+.holdings .stocks-table tbody .tr-row:hover {
+  background-color: var(--dashboard-table-hover) !important;
+}
+.holdings .stocks-table tfoot .td-cell {
+  text-align: right !important;
+}
+
+.holdings .stocks-table tfoot .td-cell:first-child {
+  border-right: 1px solid #f1f1f1 !important;
+}
+.profit {
+  color: #4caf50 !important;
+}
+
+.loss {
+  color: #ff5722 !important;
+}
+
+.treemap-widget {
+  padding: 10px 0;
+}
+
+.treemap-title {
+  font-size: 1.125rem;
+  color: var(--nav-tabs);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.holdings .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.holdings .empty-state {
+  padding: 50px 0;
+}
+
+.holdings .empty-state img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.holdings .notice {
+  padding: 10px 40px 10px 20px;
+  background-color: #fffaeb;
+  border: 1px solid #f4e4af;
+  color: var(--text-primary);
+  border-left-width: 5px;
+  max-height: 200px;
+  font-size: 0.8rem;
+}
+
+[data-theme="dark"] .holdings .notice {
+  color: #1f2937;
+}
+/* =========================== Responsiveness / Media Queries =========================== */
+
+@media (max-width: 768px) {
+  .holdings .holdings-head {
+    display: block;
+  }
+
+  .holdings-head .toolbar {
+    justify-content: flex-end;
+    padding-top: 15px;
+  }
+
+  .holdings .empty-state img {
+    max-width: 280px;
+  }
+
+  .holdings .notice {
+    padding-right: 20px !important;
+  }
+}
+@media (min-width: 577px) {
+  .left-tools input:focus {
+    width: 180px;
+  }
+}
+@media (max-width: 576px) {
+  .toolbar {
+    display: block;
+  }
+
+  .toolbar .left-tools {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .toolbar .left-tools input {
+    width: 100%;
+  }
+
+  .toolbar .left-tools input:focus {
+    width: 100%;
+  }
+
+  .holdings-head {
+    padding-bottom: 10px;
+  }
+  .stats {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .stats > div {
+    flex: 0 0 48%;
+  }
+}
