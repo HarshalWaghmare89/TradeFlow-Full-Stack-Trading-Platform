@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { GeneralContext } from "./GeneralContext";
-import axios from "axios";
+import API from "../../../../api";
 import "./BuyActionWindow.css";
 
 function BuyActionWindow({ uid, mode }) {
@@ -32,24 +32,14 @@ function BuyActionWindow({ uid, mode }) {
     setLoading(true);
 
     try {
-      const token = localStorage.getItem("token");
-
-      const response = await axios.post(
-        "http://localhost:8080/api/trade/execute",
-        {
-          instrument: newuid,
-          quantity: Number(stockQuantity),
-          price: Number(stockPrice),
-          mode,
-          product: productType,
-          exchange,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
+      const response = await API.post("/trade/execute", {
+        instrument: newuid,
+        quantity: Number(stockQuantity),
+        price: Number(stockPrice),
+        mode,
+        product: productType,
+        exchange,
+      });
 
       if (refreshDashboardData) refreshDashboardData();
       closeBuyWindow();
