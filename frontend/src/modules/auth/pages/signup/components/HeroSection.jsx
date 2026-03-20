@@ -6,6 +6,7 @@ import axios from "axios";
 function HeroSection() {
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const [isSignupLoading, setIsSignupLoading] = useState(false);
 
   const [signupData, setSignupData] = useState({
     firstName: "",
@@ -46,6 +47,7 @@ function HeroSection() {
   const handleSignUp = async (e) => {
     e.preventDefault();
     setSignupErrors({});
+    setIsSignupLoading(true);
 
     try {
       const response = await axios.post(
@@ -69,6 +71,8 @@ function HeroSection() {
       } else {
         setSignupErrors({ general: "Network error. Please try again." });
       }
+    } finally {
+      setIsSignupLoading(false);
     }
   };
 
@@ -233,8 +237,9 @@ function HeroSection() {
                     type="submit"
                     id="open_account_proceed_form"
                     className="button w-100"
+                    disabled={isSignupLoading}
                   >
-                    Sign Up
+                    {isSignupLoading ? "Signing up..." : "Sign Up"}
                   </button>
                 </div>
               </form>
