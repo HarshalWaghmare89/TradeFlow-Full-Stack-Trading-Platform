@@ -532,6 +532,13 @@ Create a `.env` file inside the **backend** folder and add:
 
 > `JWT_SECRET` can be any random string used to sign authentication tokens.
 
+Create a `.env` file inside the **frontend** folder and add:
+ 
+ ```bash
+  VITE_API_URL=http://localhost:8080
+  ```
+> This connects the frontend to your local backend server.
+
 5. Start the development servers
 
 Backend:
