@@ -16,9 +16,40 @@ const tradeRoutes = require("./routes/trade.routes");
 const app = express();
 
 // ---------- Middleware ----------
-app.use(cors()); //--->> Allow frontend requests
-app.use(helmet()); //--->> Security headers
-app.use(morgan("dev")); //--->> HTTP request logging
+app.set("trust proxy", 1); //--->> Trust proxy
+
+//--->> Allowed origins
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.FRONTEND_URL,
+].filter(Boolean);
+
+//--->> Allow frontend requests
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.warn("Blocked by CORS:", origin);
+        callback(null, false);
+      }
+    },
+    credentials: true,
+  }),
+);
+
+//--->> Security headers
+app.use(
+  helmet({
+    crossOriginResourcePolicy: false,
+  }),
+);
+
+//--->> HTTP request logging
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
 app.use(express.json()); //--->> Parse JSON body
 
 // ---------- Routes ----------
@@ -31,7 +62,7 @@ app.use("/api/funds", fundsRoutes);
 app.use("/api/trade", tradeRoutes);
 
 //----->> 404 Handler
-app.use((req, res) => {
+app.use((req, res, next) => {
   res.status(404).json({ success: false, message: "Route Not Found" });
 });
 
