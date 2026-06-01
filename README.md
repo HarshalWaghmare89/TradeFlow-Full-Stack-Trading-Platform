@@ -33,7 +33,7 @@ The platform incorporates **secure authentication and authorization** with a **m
 
 # Demo Video
 
-#### 🎥 Watch the full demo video: Coming soon
+#### 🎥 Explore TradeFlow in action: [Watch Demo](https://youtu.be/i29kFxlroMM)
 
 ---
 
